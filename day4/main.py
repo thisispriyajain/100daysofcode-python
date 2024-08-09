@@ -30,9 +30,14 @@ scissors = '''
 #Rock beats scissors
 #Paper beats rock
 #Scissors beats paper
+
+imageChoices = [rock, paper, scissors]
 userChoice = int(input("What do you choose? Type 0 for Rock, 1 for Paper, and 2 for Scissors.\n"))
+print(imageChoices[userChoice])
+
 compChoice = random.randint(0,2)
 print(f"Computer chose {compChoice}")
+print(imageChoices[compChoice])
 
 if userChoice == compChoice:
     print("It's a draw!")
